@@ -7,7 +7,11 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            
+            Console.WriteLine(OverTheRoad.overTheRoad(1, 3)); // 6
+            Console.WriteLine(OverTheRoad.overTheRoad(6, 3)); // 1
+            Console.WriteLine(OverTheRoad.overTheRoad(3, 3)); // 4
+            Console.WriteLine(OverTheRoad.overTheRoad(2, 3)); // 5
+            Console.WriteLine(OverTheRoad.overTheRoad(3, 5)); // 8
             // Console.WriteLine(ReturningStrings.Greet("Linda"));
             // Console.WriteLine(ReturnNegative.MakeNegative(0));
             // Console.WriteLine(RemoveFirstAndLastCharacters.Remove_char("apple"));
