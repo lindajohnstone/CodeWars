@@ -22,7 +22,7 @@ public class CatYearsAndDogYears
     public static int[] humanYearsCatYearsDogYears(int humanYears)
     {
         // Your code here!
-        var catYears = 15 + (humanYears >= 2 ? 9 + 4 * (humanYears -2) : 0);
+        var catYears = 15 + (humanYears >= 2 ? 9 + 4 * (humanYears - 2) : 0);
         var dogYears = 15 + (humanYears >= 2 ? 9 + 5 * (humanYears - 2) : 0);
         
         return new int[] { humanYears, catYears, dogYears };

@@ -7,9 +7,13 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(HighestAndLowest.HighAndLow("1 2 3 4 5"));  // return "5 1"
-            Console.WriteLine(HighestAndLowest.HighAndLow("1 2 -3 4 5")); // return "5 -3"
-            Console.WriteLine(HighestAndLowest.HighAndLow("1 9 3 4 -5")); // return "9 -5"
+            Console.WriteLine(LastSurvivors.LastSurvivor("zbk", new int[] { 2, 1 })); // b
+            
+            // Console.WriteLine(StringRepeat.RepeatStr(6, "I")); // "IIIIII"
+            // Console.WriteLine(StringRepeat.RepeatStr(5, "Hello")); // "HelloHelloHelloHelloHello"
+            // Console.WriteLine(HighestAndLowest.HighAndLow("1 2 3 4 5"));  // return "5 1"
+            // Console.WriteLine(HighestAndLowest.HighAndLow("1 2 -3 4 5")); // return "5 -3"
+            // Console.WriteLine(HighestAndLowest.HighAndLow("1 9 3 4 -5")); // return "9 -5"
             // var countByOnes = CountByX.CountBy(1, 10);
             // Console.WriteLine(String.Join(", ", countByOnes));
             // var countByTwos = CountByX.CountBy(2, 5);
