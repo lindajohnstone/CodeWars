@@ -7,8 +7,18 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(LastSurvivors.LastSurvivor("zbk", new int[] { 2, 1 })); // b
-            
+
+            Console.WriteLine(StringEndsWith.EndsWith("abc", "bc")); // true
+            Console.WriteLine(StringEndsWith.EndsWith("abc", "d")); // false
+            // Console.WriteLine(Operation.Result(
+            //     new int[,] 
+            //     { 
+            //         { 0, 4, 8, 5 }, 
+            //         { 2, 4, 7, 1 }, 
+            //         { 7, 5, 3, 2 },
+            //         { 2, 9, 2, 6 } 
+            //     })); // returns 76874
+            // Console.WriteLine(LastSurvivors.LastSurvivor("zbk", new int[] { 2, 1 })); // b
             // Console.WriteLine(StringRepeat.RepeatStr(6, "I")); // "IIIIII"
             // Console.WriteLine(StringRepeat.RepeatStr(5, "Hello")); // "HelloHelloHelloHelloHello"
             // Console.WriteLine(HighestAndLowest.HighAndLow("1 2 3 4 5"));  // return "5 1"
