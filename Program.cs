@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodeWars
 {
@@ -7,9 +8,23 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            Console.WriteLine(StringEndsWith.EndsWith("abc", "bc")); // true
-            Console.WriteLine(StringEndsWith.EndsWith("abc", "d")); // false
+            var noOdds = NoOddities.NoOdds(new int[] { 1, 2, 3, 4, 5 });
+            foreach (var number in noOdds)
+            {
+                Console.Write($"{number}, ");
+            }
+            Console.WriteLine("");
+            // var word = "racer";
+            // var anagrams = WhereMyAnagramsAt.Anagrams(word, new List<string> { "carer", "arcre", "carre", "racrs", "racers", "arceer", "raccer", "carrer", "cerarr" });
+            // foreach (var anagram in anagrams)
+            // {
+            //     Console.Write($"{anagram} ");
+            // } // returns 'new List<string> {"carer", "arcre", "carre"}'
+            // Console.WriteLine("");
+            // var names = SortArrays1.SortMe(new[] { "one", "two", "three" });
+            // Console.WriteLine(String.Join(", ", names));
+            // Console.WriteLine(StringEndsWith.EndsWith("abc", "bc")); // true
+            // Console.WriteLine(StringEndsWith.EndsWith("abc", "d")); // false
             // Console.WriteLine(Operation.Result(
             //     new int[,] 
             //     { 
