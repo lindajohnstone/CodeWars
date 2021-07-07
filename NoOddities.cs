@@ -4,19 +4,21 @@
 // are given.
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class NoOddities
 {
     public static int[] NoOdds(int[] values)
     {
-        var noOdds = new List<int>();
-        foreach (var value in values)
-        { 
-            if (value % 2 == 0) 
-            {
-                noOdds.Add(value);
-            }
-        }
-        return noOdds.ToArray();
+        // var noOdds = new List<int>();
+        // foreach (var value in values)
+        // { 
+        //     if (value % 2 == 0) 
+        //     {
+        //         noOdds.Add(value);
+        //     }
+        // }
+        // return noOdds.ToArray();
+        return values.Where(v => v % 2 == 0).ToArray();
     }
 }
