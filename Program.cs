@@ -9,7 +9,10 @@ namespace CodeWars
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine(HeronsFormula.CalculateAreaOfTriangle(3, 4, 5)); // 6.0
-            
+            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0 })); // even
+            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, 1, 4 })); // odd
+            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, -1, -5 })); // even
+
             // var noOdds = NoOddities.NoOdds(new int[] { 1, 2, 3, 4, 5 });
             // foreach (var number in noOdds)
             // {
