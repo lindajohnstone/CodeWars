@@ -19,27 +19,29 @@
 // 5kyu - fails 
 using System;
 using System.Collections.Generic;
-
-public static class WhereMyAnagramsAt
+namespace CodeWars
 {
-    public static List<string> Anagrams(string word, List<string> words)
+    public static class WhereMyAnagramsAt
     {
-        var anagrams = new List<string>();
-        foreach (var item in words)
+        public static List<string> Anagrams(string word, List<string> words)
         {
-
-            if (item.Length == word.Length)
+            var anagrams = new List<string>();
+            foreach (var item in words)
             {
-                var wordChars = word.ToCharArray();
-                var count = 0;
-                for (var i = 0; i < wordChars.Length; i++)
-                {
-                    if (item.Contains(wordChars[i])) count++;
-                }
-                if (count == word.Length) anagrams.Add(item);
-            }
 
+                if (item.Length == word.Length)
+                {
+                    var wordChars = word.ToCharArray();
+                    var count = 0;
+                    for (var i = 0; i < wordChars.Length; i++)
+                    {
+                        if (item.Contains(wordChars[i])) count++;
+                    }
+                    if (count == word.Length) anagrams.Add(item);
+                }
+
+            }
+            return anagrams;
         }
-        return anagrams;
     }
 }

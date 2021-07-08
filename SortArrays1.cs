@@ -1,12 +1,14 @@
 // Just a simple sorting usage. Create a function that returns the elements 
 // of the input-array / list sorted in lexicographical order.
 using System;
-
-public class SortArrays1
+namespace CodeWars
 {
-    public static string[] SortMe(string[] names)
+    public class SortArrays1
     {
-        Array.Sort(names);
-        return names;
+        public static string[] SortMe(string[] names)
+        {
+            Array.Sort(names);
+            return names;
+        }
     }
 }

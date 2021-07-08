@@ -14,21 +14,23 @@
     Output string must be two numbers separated by a single space, and highest number is first.
 */
 using System;
-
-public static class HighestAndLowest
+namespace CodeWars
 {
-    public static string HighAndLow(string numbers)
+    public static class HighestAndLowest
     {
-        var array = numbers.Split(" ");
-        var nums = new int[array.Length];
-        for (int i = 0; i < array.Length; i++)
+        public static string HighAndLow(string numbers)
         {
-            nums[i] = Int32.Parse(array[i]);
-        }
-        Array.Sort(nums);
-        var min = nums[0].ToString();
-        var max = nums[nums.Length - 1].ToString();
+            var array = numbers.Split(" ");
+            var nums = new int[array.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                nums[i] = Int32.Parse(array[i]);
+            }
+            Array.Sort(nums);
+            var min = nums[0].ToString();
+            var max = nums[nums.Length - 1].ToString();
 
-        return max + " " + min;
+            return max + " " + min;
+        }
     }
 }

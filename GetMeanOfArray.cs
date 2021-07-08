@@ -6,12 +6,14 @@
 using System.Linq;
 using System.Collections.Generic;
 using System;
-
-public class GetMeanOfArray
+namespace CodeWars
 {
-    public static int GetAverage(int[] marks)
+    public class GetMeanOfArray
     {
-        // return marks.Sum() / marks.Length;
-        return (int)marks.Average();
+        public static int GetAverage(int[] marks)
+        {
+            // return marks.Sum() / marks.Length;
+            return (int)marks.Average();
+        }
     }
 }

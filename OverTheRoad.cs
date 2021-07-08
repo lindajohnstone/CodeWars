@@ -21,10 +21,13 @@
     CodeWars.overTheRoad(2, 3) = 5
     CodeWars.overTheRoad(3, 5) = 8
 */
-public class OverTheRoad
+namespace CodeWars
 {
-    public static long overTheRoad(long address, long n)
+    public class OverTheRoad
     {
-        return (n * 2) - address + 1;
+        public static long overTheRoad(long address, long n)
+        {
+            return (n * 2) - address + 1;
+        }
     }
 }

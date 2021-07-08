@@ -18,25 +18,27 @@
 
 // LOOKED AT SOLUTION
 using System.Linq;
-
-public class Operation
+namespace CodeWars
 {
-    public static int Result(int[,] array)
+    public class Operation
     {
-        var result = 1;
-        for (var i = 0; i < array.GetLength(0); i++)
+        public static int Result(int[,] array)
         {
-            var sum = 0;
-            for (var j = 0; j < array.GetLength(1); j++)
+            var result = 1;
+            for (var i = 0; i < array.GetLength(0); i++)
             {
-                sum += array[i, j];
+                var sum = 0;
+                for (var j = 0; j < array.GetLength(1); j++)
+                {
+                    sum += array[i, j];
+                }
+                result *= sum;
             }
-            result *= sum;
-        }
 
-        return result;
-        // return Enumerable.Range(0, array.GetLength(0))
-        //     .Select(x => Enumerable.Range(0, array.GetLength(1)).Sum(i => array[x, i]))
-        //     .Aggregate(1, (a, b) => a * b);
+            return result;
+            // return Enumerable.Range(0, array.GetLength(0))
+            //     .Select(x => Enumerable.Range(0, array.GetLength(1)).Sum(i => array[x, i]))
+            //     .Aggregate(1, (a, b) => a * b);
+        }
     }
 }

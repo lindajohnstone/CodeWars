@@ -18,14 +18,17 @@ If you like this kata, check out the next one: Last Survivors Ep.2*/
 using System;
 using System.Linq;
 
-public static class LastSurvivors
+namespace CodeWars
 {
-    public static string LastSurvivor(string letters, int[] coords)
+    public static class LastSurvivors
     {
-        foreach (var coord in coords)
+        public static string LastSurvivor(string letters, int[] coords)
         {
-            letters = letters.Remove(coord, 1);
+            foreach (var coord in coords)
+            {
+                letters = letters.Remove(coord, 1);
+            }
+            return letters;
         }
-        return letters;
     }
 }

@@ -16,16 +16,17 @@
 // 15 dog years for first year
 // +9 dog years for second year
 // +5 dog years for each year after that
-public class CatYearsAndDogYears
+namespace  CodeWars
 {
-
-    public static int[] humanYearsCatYearsDogYears(int humanYears)
+    public class CatYearsAndDogYears
     {
-        // Your code here!
-        var catYears = 15 + (humanYears >= 2 ? 9 + 4 * (humanYears - 2) : 0);
-        var dogYears = 15 + (humanYears >= 2 ? 9 + 5 * (humanYears - 2) : 0);
-        
-        return new int[] { humanYears, catYears, dogYears };
-    }
+        public static int[] humanYearsCatYearsDogYears(int humanYears)
+        {
+            // Your code here!
+            var catYears = 15 + (humanYears >= 2 ? 9 + 4 * (humanYears - 2) : 0);
+            var dogYears = 15 + (humanYears >= 2 ? 9 + 5 * (humanYears - 2) : 0);
 
+            return new int[] { humanYears, catYears, dogYears };
+        }
+    }
 }

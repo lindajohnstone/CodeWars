@@ -8,15 +8,18 @@
 
 // countBy(1, 10)  should return  { 1,2,3,4,5,6,7,8,9,10}
 // countBy(2, 5)  should return { 2,4,6,8,10}
-public static class CountByX
+namespace CodeWars
 {
-    public static int[] CountBy(int x, int n)
+    public static class CountByX
     {
-        int[] z = new int[n];
-        for (int i = 0; i < n; i++)
+        public static int[] CountBy(int x, int n)
         {
-            z[i] = x * (i + 1);
+            int[] z = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                z[i] = x * (i + 1);
+            }
+            return z;
         }
-        return z;
     }
 }

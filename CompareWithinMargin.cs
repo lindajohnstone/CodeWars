@@ -13,14 +13,16 @@
 // Assume: margin >= 0
 // Forfeited - looked at Solution
 using System;
-
-public class CompareWithinMargin
+namespace CodeWars
 {
-    public static int CloseCompare(double a, double b, double margin = 0)
+    public class CompareWithinMargin
     {
-        if (a + margin < b) return -1;
-        else if (a > b + margin) return 1;
+        public static int CloseCompare(double a, double b, double margin = 0)
+        {
+            if (a + margin < b) return -1;
+            else if (a > b + margin) return 1;
 
-        return 0;
+            return 0;
+        }
     }
-}
+}   
