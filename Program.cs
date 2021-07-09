@@ -8,11 +8,19 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(HeronsFormula.CalculateAreaOfTriangle(3, 4, 5)); // 6.0
-            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0 })); // even
-            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, 1, 4 })); // odd
-            Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, -1, -5 })); // even
-
+            Console.WriteLine(SmallEnoughBeginner.SmallEnough(
+                new int[] { 66, 101 }, 200)); // true
+            Console.WriteLine(SmallEnoughBeginner.SmallEnough(
+                new int[] { 78, 117, 110, 99, 104, 117, 107, 115 }, 100)); // false
+            Console.WriteLine(SmallEnoughBeginner.SmallEnough(
+                new int[] { 101, 45, 75, 105, 99, 107 }, 107)); // true
+            Console.WriteLine(SmallEnoughBeginner.SmallEnough(
+                new int[] { 80, 117, 115, 104, 45, 85, 112, 115 }, 120)); // true
+        
+            // Console.WriteLine(HeronsFormula.CalculateAreaOfTriangle(3, 4, 5)); // 6.0
+            // Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0 })); // even
+            // Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, 1, 4 })); // odd
+            // Console.WriteLine(OddsOrEvens.OddOrEven(new int[] { 0, -1, -5 })); // even
             // var noOdds = NoOddities.NoOdds(new int[] { 1, 2, 3, 4, 5 });
             // foreach (var number in noOdds)
             // {
