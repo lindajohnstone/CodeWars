@@ -38,19 +38,13 @@ namespace CodeWars
         {
             double expectedPopulation = CalculatePopulation(p0, percent, aug);
             var numberOfYears = 0;
-            /*
-                1500, 5, 100, 5000
-                1st ye
-            */
-            // TODO: not working need to fix
-            while (p > 0)
+        
+            while (p > expectedPopulation)
             {
                 expectedPopulation = CalculatePopulation((int)expectedPopulation, percent, aug);
-                //p0 = (int)expectedPopulation;
                 numberOfYears++;
-                p = p - (int)expectedPopulation;
             }
-            //if (p > 0) numberOfYears++;
+            if (p > 0) numberOfYears++;
             return numberOfYears;
         }
 
@@ -58,5 +52,13 @@ namespace CodeWars
         {
             return p0 + (p0 * (percent / 100)) + aug;
         }
+
+        // public static int NbYear(int p0, double percent, int aug, int p)
+        // {
+        //     int year;
+        //     for (year = 0; p0 < p; year++)
+        //         p0 += (int)(p0 * percent / 100) + aug;
+        //     return year;
+        // }
     }
 }
