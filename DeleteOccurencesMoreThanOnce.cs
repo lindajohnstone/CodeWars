@@ -18,7 +18,7 @@ namespace CodeWars
     // Example
     // Kata.DeleteNth (new int[] {20,37,20,21}, 1) // return [20,37,21]
     // Kata.DeleteNth(new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3) // return [1, 1, 3, 3, 7, 2, 2, 2]  
-
+    // Looked at solution
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -28,7 +28,13 @@ namespace CodeWars
         public static int[] DeleteNth(int[] arr, int x)
         {
             var lst = new List<int>();
-            // look at each 
+            // look at each int in array
+            // add to list unless list already contains x number of int
+            // Kata.DeleteNth(new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3) // return [1, 1, 3, 3, 7, 2, 2, 2]  
+            foreach (var number in arr)
+            {
+                if (lst.Count(i => i == number) < x) lst.Add(number);
+            }
             return lst.ToArray();
         }
     }     
