@@ -8,13 +8,41 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var stringArray = FizzBuzz.GetFizzBuzzArray(15);
-            // string[] expected = { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" };
-            foreach (var s in stringArray)
+            var a1 = new string[] { "arp", "live", "strong" };
+            var a2 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
+            var ex1 = WhichAreIn.inArray(a1, a2);
+
+            for (var i = 0; i < ex1.Length; i++)
             {
-                Console.Write($"{s} ");
+                Console.Write(ex1[i]);
             }
             Console.WriteLine("");
+            // returns["arp", "live", "strong"]
+            var a3 = new string[] { "tarp", "mice", "bull" };
+            var a4 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
+            var ex2 = WhichAreIn.inArray(a3, a4);
+
+            for (var i = 0; i < ex2.Length; i++)
+            {
+                Console.Write(ex2[i]);
+            }
+            Console.WriteLine("");
+            // returns[]
+            // Console.WriteLine(StopSpinningMyWords.SpinWords("Hey fellow warriors"));
+            // spinWords("Hey fellow warriors") => "Hey wollef sroirraw"
+            // Console.WriteLine(StopSpinningMyWords.SpinWords("This is a test"));
+            // spinWords("This is a test") => "This is a test"
+            // Console.WriteLine(StopSpinningMyWords.SpinWords("This is another test"));
+            // spinWords("This is another test") => "This is rehtona test"
+            // Console.WriteLine(StopSpinningMyWords.SpinWords("Just kidding there is still one more"));
+            // ("Just gniddik ereht is llits one more", Kata.SpinWords("Just kidding there is still one more"))
+            // var stringArray = FizzBuzz.GetFizzBuzzArray(15);
+            // string[] expected = { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" };
+            // foreach (var s in stringArray)
+            // {
+            //     Console.Write($"{s} ");
+            // }
+            // Console.WriteLine("");
             // var numbers = DeleteOccurencesMoreThanOnce.DeleteNth(new int[] { 20, 37, 20, 21 }, 1);// return [20,37,21]
             // var numbers = DeleteOccurencesMoreThanOnce.DeleteNth(new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3); 
             // return [1, 1, 3, 3, 7, 2, 2, 2]

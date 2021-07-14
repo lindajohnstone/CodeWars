@@ -1,5 +1,5 @@
 using System;
-namespace Name
+namespace CodeWars
 {
     public class ReversedWords
     {
