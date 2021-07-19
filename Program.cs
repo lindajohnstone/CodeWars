@@ -8,25 +8,39 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var a1 = new string[] { "arp", "live", "strong" };
-            var a2 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
-            var ex1 = WhichAreIn.inArray(a1, a2);
+            Console.WriteLine(FindOddInt.find_it(new[] { 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 })); // returns 5
+            // var array1 = ArrayDifference.ArrayDiff(new int[] { 1, 2 }, new int[] { 1 });
+            // foreach (var number in array1)
+            // {
+            //     Console.Write($"{number} ");// returns new int[] {2}
+            // }
+            // Console.Write(Environment.NewLine);
 
-            for (var i = 0; i < ex1.Length; i++)
-            {
-                Console.Write(ex1[i]);
-            }
-            Console.WriteLine("");
-            // returns["arp", "live", "strong"]
-            var a3 = new string[] { "tarp", "mice", "bull" };
-            var a4 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
-            var ex2 = WhichAreIn.inArray(a3, a4);
+            // var array2 = ArrayDifference.ArrayDiff(new int[] { 1, 2, 2, 2, 3 }, new int[] { 2 });
+            // foreach (var number in array2)
+            // {
+            //     Console.Write($"{number} ");// returns new int[] {1, 3}
+            // }
+            // Console.Write(Environment.NewLine);
+            // var a1 = new string[] { "arp", "live", "strong" };
+            // var a2 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
+            // var ex1 = WhichAreIn.inArray(a1, a2);
 
-            for (var i = 0; i < ex2.Length; i++)
-            {
-                Console.Write(ex2[i]);
-            }
-            Console.WriteLine("");
+            // for (var i = 0; i < ex1.Length; i++)
+            // {
+            //     Console.Write(ex1[i]);
+            // }
+            // Console.WriteLine("");
+            // // returns["arp", "live", "strong"]
+            // var a3 = new string[] { "tarp", "mice", "bull" };
+            // var a4 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
+            // var ex2 = WhichAreIn.inArray(a3, a4);
+
+            // for (var i = 0; i < ex2.Length; i++)
+            // {
+            //     Console.Write(ex2[i]);
+            // }
+            // Console.WriteLine("");
             // returns[]
             // Console.WriteLine(StopSpinningMyWords.SpinWords("Hey fellow warriors"));
             // spinWords("Hey fellow warriors") => "Hey wollef sroirraw"
