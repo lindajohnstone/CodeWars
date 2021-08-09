@@ -12,29 +12,8 @@ namespace CodeWars
     {
         public static int Solution(int value)
         {
-            var multiplesList = new List<int>();
-            // loop through find numbers that are multiples of 3 that are below value
-            // %3 
-            for (var i = 1; i < value; i++)
-            {
-                if (i % 3 == 0 || i % 5 == 0 && !multiplesList.Contains(i))
-                    multiplesList.Add(i);
-            }
-            IEnumerable<int> multiples =
-                (IEnumerable<int>)Enumerable.Range(1, value).Select(x => x % 3 == 0 || x % 5 == 0);
-            foreach (var multiple in multiples)
-            {
-                if (!multiplesList.Contains(multiple)) multiplesList.Add(multiple);
-            }
-            // use || - or to combine loops
-            // google how to determine if number is already in list
-
-            // loop through find numbers that are multiples of 5 that are below value
-            // no duplicates
-            // add multiples together
-            // return sum
-            var sum = multiplesList.Sum();
-            return sum;
+            if (value <= 0) return 0;
+            return Enumerable.Range(0, value - 1).Where(x => x % 3 == 0 || x % 5 == 0).Sum();
         }
     }
 }

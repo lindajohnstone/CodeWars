@@ -8,8 +8,11 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //Console.WriteLine(DisemvowellTrolls.Disemvowel("This website is for losers LOL!")); // "Ths wbst s fr lsrs LL!"
             Console.WriteLine(Multiples3Or5.Solution(10)); // 23
+            Console.WriteLine(Multiples3Or5.Solution(20)); // 78
+            Console.WriteLine(Multiples3Or5.Solution(21)); // 78
+            Console.WriteLine(Multiples3Or5.Solution(-3)); // 0
+            //Console.WriteLine(DisemvowellTrolls.Disemvowel("This website is for losers LOL!")); // "Ths wbst s fr lsrs LL!"
             //Console.WriteLine(NumberOfDigits.Digits(1000ul));// 4
             //Console.WriteLine(VowelCount.GetVowelCount("abracadabra")); // 5
             //Assert.AreEqual(5, Kata.GetVowelCount("abracadabra"), "Nope!");
