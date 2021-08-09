@@ -8,7 +8,12 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(FindOddInt.find_it(new[] { 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 })); // returns 5 // solution returns -1
+            //Console.WriteLine(DisemvowellTrolls.Disemvowel("This website is for losers LOL!")); // "Ths wbst s fr lsrs LL!"
+            Console.WriteLine(Multiples3Or5.Solution(10)); // 23
+            //Console.WriteLine(NumberOfDigits.Digits(1000ul));// 4
+            //Console.WriteLine(VowelCount.GetVowelCount("abracadabra")); // 5
+            //Assert.AreEqual(5, Kata.GetVowelCount("abracadabra"), "Nope!");
+            //Console.WriteLine(FindOddInt.find_it(new[] { 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 })); // returns 5 // solution returns -1
             // var array1 = ArrayDifference.ArrayDiff(new int[] { 1, 2 }, new int[] { 1 });
             // foreach (var number in array1)
             // {
