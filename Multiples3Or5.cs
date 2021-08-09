@@ -19,8 +19,15 @@ namespace CodeWars
             {
                 if (i % 3 == 0 || i % 5 == 0 && !multiplesList.Contains(i))
                     multiplesList.Add(i);
-            }// use || - or to combine loops
-             // google how to determine if number is already in list
+            }
+            IEnumerable<int> multiples =
+                (IEnumerable<int>)Enumerable.Range(1, value).Select(x => x % 3 == 0 || x % 5 == 0);
+            foreach (var multiple in multiples)
+            {
+                if (!multiplesList.Contains(multiple)) multiplesList.Add(multiple);
+            }
+            // use || - or to combine loops
+            // google how to determine if number is already in list
 
             // loop through find numbers that are multiples of 5 that are below value
             // no duplicates
