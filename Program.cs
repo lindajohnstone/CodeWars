@@ -8,11 +8,15 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(WhoLikesIt.Likes(new string[0])); // returns "no one likes this"
-            Console.WriteLine(WhoLikesIt.Likes(new string[] { "Peter" })); // "Peter likes this"
-            Console.WriteLine(WhoLikesIt.Likes(new string[] { "Jacob", "Alex" })); // "Jacob and Alex like this"
-            Console.WriteLine(WhoLikesIt.Likes(new string[] { "Max", "John", "Mark" })); // "Max, John and Mark like this"
-            Console.WriteLine(WhoLikesIt.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" })); // "Alex, Jacob and 2 others like this"
+            Console.WriteLine(SumOfDigits.DigitalRoot(16)); // 7
+            Console.WriteLine(SumOfDigits.DigitalRoot(942)); // 6
+            Console.WriteLine(SumOfDigits.DigitalRoot(132189)); // 6
+            Console.WriteLine(SumOfDigits.DigitalRoot(493193)); // 2
+            // Console.WriteLine(WhoLikesIt.Likes(new string[0])); // returns "no one likes this"
+            // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Peter" })); // "Peter likes this"
+            // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Jacob", "Alex" })); // "Jacob and Alex like this"
+            // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Max", "John", "Mark" })); // "Max, John and Mark like this"
+            // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" })); // "Alex, Jacob and 2 others like this"
             // Console.WriteLine(Multiples3Or5.Solution(10)); // 23
             // Console.WriteLine(Multiples3Or5.Solution(20)); // 78
             // Console.WriteLine(Multiples3Or5.Solution(21)); // 78
