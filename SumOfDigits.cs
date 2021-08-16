@@ -20,13 +20,17 @@ namespace CodeWars
             // sum list
             // check length of list
             // if length more than repeat above steps until length = 1
-            var numbersString = n.ToString();
-            var numbersChar = numbersString.ToCharArray();
             var sum = 0;
-            foreach (var number in numbersChar)
+            do
             {
-                sum += Int32.Parse(number.ToString());
-            }
+                if (sum > 0) n = sum;
+                var numbersString = n.ToString();
+                var numbersChar = numbersString.ToCharArray();
+                foreach (var number in numbersChar)
+                {
+                    sum += Int32.Parse(number.ToString());
+                }
+            } while (sum.ToString().ToCharArray().Length > 1);
             return sum;
         }
     }
