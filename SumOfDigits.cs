@@ -11,22 +11,31 @@ namespace CodeWars
     // 942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
     // 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
     // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+
+    // https://www.codewars.com/kata/541c8630095125aba6000c00/solutions solutions
+    // below failed on CodeWars
     public class SumOfDigits
     {
         public static int DigitalRoot(long n)
         {
-            // split number into single integers
-            // add to list
-            // sum list
-            // check length of list
-            // if length more than repeat above steps until length = 1
-            var sum = 0;
+            var sum = SumAllDigits(n);
+            while (sum > 9)
+            {
+                sum = SumAllDigits(sum);
+            }
+            return sum;
+        }
+
+        private static int SumAllDigits(long n)
+        {
             var numbersString = n.ToString();
             var numbersChar = numbersString.ToCharArray();
+            var sum = 0;
             foreach (var number in numbersChar)
             {
                 sum += Int32.Parse(number.ToString());
             }
+
             return sum;
         }
     }

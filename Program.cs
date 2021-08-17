@@ -12,6 +12,8 @@ namespace CodeWars
             Console.WriteLine(SumOfDigits.DigitalRoot(942)); // 6
             Console.WriteLine(SumOfDigits.DigitalRoot(132189)); // 6
             Console.WriteLine(SumOfDigits.DigitalRoot(493193)); // 2
+            Console.WriteLine(SumOfDigits.DigitalRoot(16)); // 7
+            Console.WriteLine(SumOfDigits.DigitalRoot(456)); // 6
             // Console.WriteLine(WhoLikesIt.Likes(new string[0])); // returns "no one likes this"
             // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Peter" })); // "Peter likes this"
             // Console.WriteLine(WhoLikesIt.Likes(new string[] { "Jacob", "Alex" })); // "Jacob and Alex like this"
