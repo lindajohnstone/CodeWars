@@ -29,9 +29,8 @@ namespace CodeWars
         private static int SumAllDigits(long n)
         {
             var numbersString = n.ToString();
-            var numbersChar = numbersString.ToCharArray();
             var sum = 0;
-            foreach (var number in numbersChar)
+            foreach (var number in numbersString)
             {
                 sum += Int32.Parse(number.ToString());
             }
