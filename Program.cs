@@ -8,7 +8,11 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(SquareEveryDigit.SquareDigits(9119)); // 811181
+            // "aabbcde" -> 2 # 'a' and 'b'
+            Console.WriteLine(CountingDuplicates.DuplicateCount("aabbcde"));
+            // Console.WriteLine(ReplaceWithAlphabetPosition.AlphabetPosition("The sunset sets at twelve o' clock."));
+            // "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" 
+            // Console.WriteLine(SquareEveryDigit.SquareDigits(9119)); // 811181
             // Console.WriteLine(SumOfDigits.DigitalRoot(16)); // 7
             // Console.WriteLine(SumOfDigits.DigitalRoot(942)); // 6
             // Console.WriteLine(SumOfDigits.DigitalRoot(132189)); // 6
