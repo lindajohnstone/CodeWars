@@ -8,8 +8,21 @@ namespace CodeWars
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            // "aabbcde" -> 2 # 'a' and 'b'
-            Console.WriteLine(CountingDuplicates.DuplicateCount("aabbcde"));
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("abcde"));
+            // // "abcde" -> 0 # no characters repeats more than once - correct
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("aabbcde"));
+            // // "aabbcde" -> 2 # 'a' and 'b' - correct
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("aabBcde"));
+            // // "aabBcde" -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`) - correct
+            Console.WriteLine(CountingDuplicates.DuplicateCount("indivisibility"));
+            // "indivisibility" -> 1 # 'i' occurs six times 
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("Indivisibilities"));
+            // // "Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice - correct
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("aA11"));
+            // // "aA11" -> 2 # 'a' and '1'
+            // Console.WriteLine(CountingDuplicates.DuplicateCount("ABBA"));
+            // "ABBA" -> 2 # 'A' and 'B' each occur twice - correct
+            
             // Console.WriteLine(ReplaceWithAlphabetPosition.AlphabetPosition("The sunset sets at twelve o' clock."));
             // "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" 
             // Console.WriteLine(SquareEveryDigit.SquareDigits(9119)); // 811181
